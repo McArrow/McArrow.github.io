@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>rsp</title>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <script src="rsp.js"></script>
+        <style>
+            #container { float: left; position: relative; margin-right: 10px; width: 324px; height: 324px; border: 1px solid #ccc; }
+            input { margin: 10px; }
+        </style>
+    </head>
+    <body>
+        <div id="container"></div>
+        <div>
+            <label><input type="number" value="20" id="qty" disabled>Количество элементов одного вида</label><br>
+            <label><input type="number" value="12" id="radius" disabled>Размер одного элемента</label><br>
+            <label><input type="number" value="300" id="containerSize" disabled>Размер поля</label><br>
+            <label><input type="number" value="10" id="attractionToRepulsion" disabled>Отношение притяжение/отталкивание</label><br>
+            <label><input type="number" value="0.1" id="dt" disabled>Шаг времени</label><br>
+            <input type="button" value="Стоп" id="button"><span id="stepCounter"></span>
+        </div>
+    </body>
+</html>
